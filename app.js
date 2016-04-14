@@ -7,7 +7,7 @@ app.set('view engine', 'jade');
 // Create a route handler for the home path
 app.get('/', function (req, res) {
 	res.render('index', {
-		title: 'My Page'
+		title: 'My first Heroku online app'
 	});
 });
 var port =  process.env.PORT || 3000;
