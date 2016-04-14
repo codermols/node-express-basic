@@ -10,6 +10,6 @@ app.get('/', function (req, res) {
 		title: 'My Page'
 	});
 });
-
-app.listen(3000);
-console.log('Server is listing at http://127.0.0.1:3000');
+var port =  process.env.PORT || 3000;
+app.listen(port);
+console.log('Server listening at port ' + port);
